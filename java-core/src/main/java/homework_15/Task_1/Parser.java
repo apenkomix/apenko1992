@@ -18,7 +18,7 @@ public class Parser {
         SAXParser parser = parserFactory.newSAXParser();
 
         SAXHandler handler = new SAXHandler();
-        InputStream resource = ClassLoader.getSystemResourceAsStream("hwrk_15/json/xml/students.xml");
+        InputStream resource = ClassLoader.getSystemResourceAsStream("hwrk_15/hmrk/xml/students.xml");
         parser.parse(resource, handler);
 
         List<Students> studentsList = handler.getEmpList();
