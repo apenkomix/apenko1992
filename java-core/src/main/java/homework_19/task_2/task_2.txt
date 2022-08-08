@@ -1,0 +1,4 @@
+SELECT * sbj.subject, count(*) mix
+INNER join subject sbj on sbj.id = mi.subject_id
+group by sbj.subject
+order by sbj.subject desc
