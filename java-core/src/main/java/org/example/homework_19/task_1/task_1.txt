@@ -1,0 +1,2 @@
+select * from student st, subject sbj, mix mid
+where st.id = mid.student_id and sbj.id = mid.subject_id and sbj.subject = 'Math'
