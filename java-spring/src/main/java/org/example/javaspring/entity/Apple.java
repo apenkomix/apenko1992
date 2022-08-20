@@ -1,4 +1,8 @@
 package org.example.javaspring.entity;
 
-public record Apple(String Id, String name, String color,Integer amount, Integer price) {
+import java.util.List;
+
+public record Apple(String Id, String name, String color, Long quantity, Long price) {
+    public void add(List<Apple> apple) {
+    }
 }

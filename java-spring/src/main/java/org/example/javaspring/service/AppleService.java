@@ -16,7 +16,8 @@ public class AppleService {
         this.appleDtoConverter = appleDtoConverter;
     }
     public AppleDto getById(Long id){
-       Apple apple = appleRepository.getById(id);
+        Apple apple = appleRepository.getById(id);
         return appleDtoConverter.converter(apple);
+
     }
 }
