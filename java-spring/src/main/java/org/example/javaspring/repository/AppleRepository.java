@@ -23,4 +23,5 @@ public class AppleRepository  {
     public Apple getById(Long id){
        return storage.get(id);
     }
-}
+    }
+
