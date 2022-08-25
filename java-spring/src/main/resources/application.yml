@@ -1,0 +1,7 @@
+pingwit.server:
+  name: "Apenko from yml"
+  port: 8080
+
+pingwit.email:
+  from: mihailapenko794@gmail.com
+  signature: "\n\n King regards \nPingwit"

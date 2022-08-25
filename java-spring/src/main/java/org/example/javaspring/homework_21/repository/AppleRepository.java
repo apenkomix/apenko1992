@@ -1,20 +1,15 @@
-package org.example.javaspring.repository;
+package org.example.javaspring.homework_21.repository;
 
-import org.example.javaspring.dao.JdbcConnector;
-import org.example.javaspring.entity.Apple;
-import org.springframework.boot.autoconfigure.amqp.AbstractConnectionFactoryConfigurer;
+import org.example.javaspring.homework_21.entity.Apple;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Repository
 public class AppleRepository  {
-    private Map<Long,Apple> storage = new HashMap<>();
+    private Map<Long, Apple> storage = new HashMap<>();
     @PostConstruct
     private void init(){
         System.out.println("Hi from PostConstruckt");

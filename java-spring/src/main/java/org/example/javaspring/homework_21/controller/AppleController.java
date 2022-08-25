@@ -1,7 +1,7 @@
-package org.example.javaspring.controller;
+package org.example.javaspring.homework_21.controller;
 
-import org.example.javaspring.dto.AppleDto;
-import org.example.javaspring.service.AppleService;
+import org.example.javaspring.homework_21.dto.AppleDto;
+import org.example.javaspring.homework_21.service.AppleService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,5 +25,9 @@ public class AppleController {
     @GetMapping("/getAll")
     public List<AppleDto> getAllApples() throws SQLException, ClassNotFoundException {
         return appleService.getAllApples();
+    }
+    @GetMapping("/getStatistics")
+    public List<AppleDto> getStatistics() throws SQLException,ClassNotFoundException{
+        return appleService.getStatistics();
     }
 }

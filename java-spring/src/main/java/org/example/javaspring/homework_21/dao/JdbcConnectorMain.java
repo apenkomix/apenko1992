@@ -1,4 +1,4 @@
-package org.example.javaspring.dao;
+package org.example.javaspring.homework_21.dao;
 
 import java.sql.SQLException;
 

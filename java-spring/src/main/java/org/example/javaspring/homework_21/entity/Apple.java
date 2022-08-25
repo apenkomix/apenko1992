@@ -1,4 +1,4 @@
-package org.example.javaspring.entity;
+package org.example.javaspring.homework_21.entity;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package org.example.javaspring.config;
+package org.example.javaspring.homework_21.config;
 
-import org.example.javaspring.converter.AppleDtoConverter;
+import org.example.javaspring.homework_21.converter.AppleDtoConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,0 +1,3 @@
+pingwit.server:
+  name: "Apenko from default-yml"
+  port: 8080

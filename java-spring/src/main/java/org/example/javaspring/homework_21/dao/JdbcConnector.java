@@ -1,13 +1,11 @@
-package org.example.javaspring.dao;
+package org.example.javaspring.homework_21.dao;
 
-import org.example.javaspring.entity.Apple;
+import org.example.javaspring.homework_21.entity.Apple;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Repository
 public class JdbcConnector {
@@ -33,5 +31,22 @@ public class JdbcConnector {
             return apples;
         }
     }
-}
 
+    public List<Apple> getStatistics() throws ClassNotFoundException, SQLException {
+        Class.forName("org.postgresql.Driver");
+        DriverManager.getConnection(URL, USSER, PASSWORD);
+        List<Apple> apples = new ArrayList<>();
+        try (Connection connection = DriverManager.getConnection(URL, USSER, PASSWORD)) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("SELECT * FROM apple_warehouse SELECT name count(*) group BY name");
+
+            while (rs.next()) {
+                Apple apple = new Apple(rs.getString(1), rs.getString(2), rs.getString(3),
+                        rs.getLong(4), rs.getLong(5));
+                apples.add(apple);
+
+            }
+            return apples;
+        }
+    }
+}

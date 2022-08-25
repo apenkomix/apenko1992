@@ -1,7 +1,7 @@
-package org.example.javaspring.converter;
+package org.example.javaspring.homework_21.converter;
 
-import org.example.javaspring.dto.AppleDto;
-import org.example.javaspring.entity.Apple;
+import org.example.javaspring.homework_21.entity.Apple;
+import org.example.javaspring.homework_21.dto.AppleDto;
 
 public class AppleDtoConverter {
     public AppleDto converter(Apple apple) {
