@@ -5,3 +5,9 @@ pingwit.server:
 pingwit.email:
   from: mihailapenko794@gmail.com
   signature: "\n\n King regards \nPingwit"
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/apenko
+    username: postgres
+    password: docker
