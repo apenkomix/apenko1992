@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+//Можно использовать CrudRepository, так как не используются методы с пагинацией
 @Repository
 public interface HouseRepository extends PagingAndSortingRepository<House, Long> {
     List<House> findAllByHouseType(HouseType houseType);
