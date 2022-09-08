@@ -31,4 +31,8 @@ public class HouseController {
     public List<HouseDto> findAllByFloorGreaterThenEqualOrderByIdDesc(@PathVariable int number){
         return houseService.findAllByFloorGreaterThenEqualOrderByIdDesc(number);
     }
+    @GetMapping("/{id}")
+    public HouseDto findById(@PathVariable Long id){
+        return houseService.getById(id);
+    }
 }

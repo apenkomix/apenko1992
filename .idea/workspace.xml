@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e2b4d7-ce93-4746-b2f0-713c38dd4a9e" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/controller/LaptopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/converter/LaptopConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/dto/LaptopDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/entity/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/entity/Processor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/entity/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/repository/LaptopRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_23/service/LaptopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/converter/AddressConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/dto/AddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/entity/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-spring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-spring/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/controller/HouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/converter/HouseConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/converter/HouseConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/dto/HouseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/dto/HouseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/entity/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/entity/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-spring/src/main/java/org/example/javaspring/homework_24/service/HouseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

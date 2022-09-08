@@ -2,6 +2,7 @@ package org.example.javaspring.homework_24.service;
 
 import org.example.javaspring.homework_24.converter.HouseConverter;
 import org.example.javaspring.homework_24.dto.HouseDto;
+import org.example.javaspring.homework_24.entity.House;
 import org.example.javaspring.homework_24.entity.HouseType;
 import org.example.javaspring.homework_24.repository.HouseRepository;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,9 @@ public class HouseService {
 
     public List<HouseDto> findAllByType(HouseType houseType) {
         return houseRepository.findAllByHouseType(houseType).stream().map(houseConverter::toFront).toList();
+    }
+    public HouseDto getById(Long id){
+        return houseRepository.findById(id).map(houseConverter::toFront).orElse(null);
     }
     public List<HouseDto> findAllById(List<Long> id) {
         return houseRepository.findAllById(id).stream().map(houseConverter::toFront).toList();
