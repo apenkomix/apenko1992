@@ -1,6 +1,7 @@
 package org.example.javaspring.homework_24.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class House {
@@ -9,12 +10,35 @@ public class House {
     private long id;
     @Column(name = "type")
     @Enumerated(EnumType.STRING)
-    private HouseType HouseType;
+    private HouseType houseType;
     private Integer floor;
     private Integer entrance;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;
+    @OneToMany(mappedBy = "house", cascade = CascadeType.ALL)
+    private List<Elevator> elevators;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "resident_house",
+    joinColumns = @JoinColumn(name = "house_id"),
+    inverseJoinColumns = @JoinColumn(name = "resident_id"))
+    private List<Resident> residents;
+
+    public List<Resident> getResidents() {
+        return residents;
+    }
+
+    public void setResidents(List<Resident> residents) {
+        this.residents = residents;
+    }
+
+    public List<Elevator> getElevators() {
+        return elevators;
+    }
+
+    public void setElevators(List<Elevator> elevators) {
+        this.elevators = elevators;
+    }
 
     public Address getAddress() {
         return address;
@@ -41,11 +65,11 @@ public class House {
     }
 
     public org.example.javaspring.homework_24.entity.HouseType getHouseType() {
-        return HouseType;
+        return houseType;
     }
 
     public void setHouseType(org.example.javaspring.homework_24.entity.HouseType houseType) {
-        HouseType = houseType;
+        this.houseType = houseType;
     }
 
     public Integer getFloor() {

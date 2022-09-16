@@ -11,3 +11,5 @@ spring:
     url: jdbc:postgresql://localhost:5432/apenko
     username: postgres
     password: docker
+  jpa:
+    show-sql: true

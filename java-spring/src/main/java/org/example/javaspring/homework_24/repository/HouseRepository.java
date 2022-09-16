@@ -10,6 +10,8 @@ import java.util.List;
 @Repository
 public interface HouseRepository extends PagingAndSortingRepository<House, Long> {
     List<House> findAllByHouseType(HouseType houseType);
-    List<House> findAllById(List<Long> id);
-    List<House> findAllByFloorGreaterThenEqualOrderByIdDesc(int floor);
+    List<House> findAllByIdIn(List<Long> id);
+    List<House> findAllByFloorGreaterThanEqualOrderByIdDesc(int floor);
+
+    List<House> findByIdIn(List<Long> id);
 }
